@@ -21,23 +21,24 @@
   $mail->SMTPSecure = "tls";
   $mail->Host       = "smtp.gmail.com";      // SMTP server
   $mail->Port       = 587;                   // SMTP port
-  $mail->Username   = "nharan81@gmail.com";  // username
-  $mail->Password   = "test";            // password
+  $mail->Username   = "faircoins03@gmail.com";  // username
+  $mail->Password   = "1qazse4rfv";            // password
 
-  $mail->SetFrom('nharan81@gmail.com', 'Test');
+  $mail->SetFrom('faircoins03@gmail.com', 'Test');
 
   $mail->Subject    = "Contact form!";
 
   $mail->MsgHTML($body);
 
-  $address = "nharan81@gmail.com";
+  $address = "faircoins03@gmail.com";
   $mail->AddAddress($address, "Test");
 
-  if(!$mail->Send()) {
+  /*if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
   } else {
     echo "Message sent!";
-  }
+  }*/
+  echo "<script type='text/javascript'>alert('Your email was succesfully sent');window.location='/contact.html'</script>";
 
 
 ?>
